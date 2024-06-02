@@ -1,0 +1,241 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0); 
+    color: #000000;
+}
+
+/* Logo styles */
+header .logo-container .logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+header .main-nav {
+    padding: 0;
+}
+
+header .main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin: 0 15px;
+    position: relative; /* Add relative positioning to create space for the line */
+    display: flex; /* Add flex display to center the text */
+    align-items: center; /* Align items vertically */
+}
+
+header .main-nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px; /* Adjust the position of the line */
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust line color and opacity */
+}
+
+header .main-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Allow the text to occupy full width */
+    padding-right: 8px; /* Adjust the padding to move the text slightly to the right */
+    margin-right: 8px; /* Add margin to create space between text and lines */
+    position: relative;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button i {
+    color: #ffffff;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%; /* Set width to fill the container */
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%; /* Set width to fill the slide */
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Showcase styles */
+.showcase {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Content container styles for the overview section */
+.overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Overview section heading styles */
+.overview-container h2 {
+    margin-bottom: 10px;
+}
+
+/* Overview section paragraph styles */
+.overview-container p {
+    margin-bottom: 20px;
+}
+
+/* Image container styles */
+.image-container {
+    max-width: 30%;
+    float: right;
+    margin-right: 8px;
+    margin-top: -275px;
+}
+
+/* Adjust image size */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section divider styles */
+.section-divider {
+    clear: both;
+    margin-top: 20px;
+}
+
+/* Facts section styles */
+.facts-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* About section paragraph styles */
+.about-container p,
+.section-paragraph p,
+.facts-section p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for more spacing */
+}
+
+/* History heading and paragraph styles */
+.image-grid-callout-content-wrapper h2,
+.image-grid-callout-content-wrapper p {
+    text-align: center; /* Center align history heading and paragraph */
+    line-height: 1.5;
+}
+
+.image-grid-callout-content-wrapper p {
+    font-size: 16px; /* Center align history heading and paragraph */
+    margin-left: 20px;
+    margin-right: 20px ;
+}
+
+/* Overview section heading and paragraph styles */
+.overview-container h2,
+.overview-container p {
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for more spacing */
+}
+
+/* Center the video container using flexbox */
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Adjust the size of the iframe */
+.video-container iframe {
+    width: 1200px; /* Adjust the width as needed */
+    height: 550px; /* Adjust the height as needed */
+}

@@ -1,0 +1,217 @@
+/* Body styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0); 
+    color: #000000;
+}
+
+/* Logo styles */
+header .logo-container .logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+header .main-nav {
+    padding: 0;
+}
+
+header .main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin: 0 15px;
+    position: relative; /* Add relative positioning to create space for the line */
+    display: flex; /* Add flex display to center the text */
+    align-items: center; /* Align items vertically */
+}
+
+header .main-nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px; /* Adjust the position of the line */
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust line color and opacity */
+}
+
+header .main-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Allow the text to occupy full width */
+    padding-right: 8px; /* Adjust the padding to move the text slightly to the right */
+    margin-right: 8px; /* Add margin to create space between text and lines */
+    position: relative;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button i {
+    color: #ffffff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Contact styles*/
+.row > :is(div, main, aside, header, footer, nav, section, article, ol, ul, li, p, blockquote) {
+    --padding-left: var(--grid-gutter-x-width);
+    --padding-right: var(--grid-gutter-x-width);
+    padding-right: 0.5rem;
+    padding-right: var(--padding-right);
+    padding-left: 0.5rem;
+    padding-left: var(--padding-left);
+}
+
+.row.roomy {
+    --grid-gutter-x-width: 1rem;
+    --grid-gutter-y-width: 2rem;
+    --grid-outer-gutter-width: 2rem;
+}
+
+.row {
+    --margin-left: calc(var(--grid-gutter-x-width) * -1);
+    --margin-right: calc(var(--grid-gutter-x-width) * -1);
+    display: flex;
+    align-items: flex-start;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-direction: var(--grid-row-direction);
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-wrap: var(--grid-wrap);
+    margin-right: calc(0.5rem * -1);
+    margin-right: var(--margin-right);
+    margin-left: calc(0.5rem * -1);
+    margin-left: var(--margin-left);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: var(--spacing-xl);
+}
+
+.contact-info > div {
+    flex-basis: calc(33.33% - var(--grid-gutter-x-width));
+    max-width: calc(33.33% - var(--grid-gutter-x-width));
+    margin-bottom: var(--spacing-xl);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Add some slight lines for separation */
+.contact-info > div:not(:last-child) {
+    border-bottom: 3px solid rgba(27, 25, 25, 0.1);
+}
+
+/* Add colors */
+.contact-info h3 {
+    color: #333; /* Dark gray */
+}
+
+.contact-info p {
+    color: #3e3e3e; /* Medium gray */
+}
+
+.contact-info a {
+    color: #007bff; /* Blue */
+}
+
+.contact-info input[type="submit"] {
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White */
+}
+
+.contact-info input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add left margin to text and paragraphs */
+.contact-info p, .contact-info h3 {
+    margin-left: 35px; /* Adjust as needed */
+}
+
+/* Add left margin to the label for search email text */
+.email-contact label {
+    margin-left: 35px; /* Adjust as needed */
+}
+
+/* Add margin on the right side for the postal address heading and paragraphs */
+.postal-address h3,
+.postal-address p {
+    margin-right: 35px; /* Adjust as needed */
+}
+
+/* Add CSS styles for the new sections */
+.visit-information ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.visit-information ul li {
+    margin-bottom: 10px; /* Add space between each list item */
+    list-style-type: square;
+    margin-left: 70px;
+    color: #444242;
+}
+
+.opening-hours {
+    font-weight: bold;
+}
+

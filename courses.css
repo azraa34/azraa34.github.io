@@ -1,0 +1,194 @@
+/* Body styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0); 
+    color: #000000;
+}
+
+/* Logo styles */
+header .logo-container .logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+header .main-nav {
+    padding: 0;
+}
+
+header .main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin: 0 15px;
+    position: relative; /* Add relative positioning to create space for the line */
+    display: flex; /* Add flex display to center the text */
+    align-items: center; /* Align items vertically */
+}
+
+header .main-nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px; /* Adjust the position of the line */
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust line color and opacity */
+}
+
+header .main-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Allow the text to occupy full width */
+    padding-right: 8px; /* Adjust the padding to move the text slightly to the right */
+    margin-right: 8px; /* Add margin to create space between text and lines */
+    position: relative;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button i {
+    color: #ffffff;
+}
+
+h2 {
+    text-align: left; /* Center-align the heading */
+    margin-top: 20px; /* Add margin on top */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    margin-left: 160px;
+    color: #000000; /* Color of the heading text */
+}
+
+/* Table styles */
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid #0c0c0c; /* Dark color for table borders */
+    margin-left: 40px ;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #020202; /* Light grey border between columns */
+}
+
+table th {
+    background-color: chocolate; /* Dark color for table header */
+    color: #ffffff; /* White text color */
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(237, 179, 137); /* Alternating light grey background for even rows */
+}
+
+table tr:not(:last-child) td {
+    border-bottom: 1px solid #000000; /* Light grey border between rows */
+}
+
+/* Heading styles for Postgraduate Courses */
+#postgraduate-courses-heading {
+    text-align: left;
+    margin-top: 45px;
+    font-size: 24px;
+    color: #000000;
+    margin-left: 40px;
+}
+
+/* Container for Postgraduate Courses table */
+#postgraduate-container {
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* Postgraduate table styles */
+#postgraduate-container table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #0c0c0c; /* Dark color for table borders */
+}
+
+#postgraduate-container table th,
+#postgraduate-container table td {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #020202; /* Light grey border between columns */
+}
+
+#postgraduate-container table th {
+    background-color: rgb(80, 78, 77); /* Dark color for table header */
+    color: #ffffff; /* White text color */
+}
+
+#postgraduate-container table tr:not(:last-child) td {
+    border-bottom: 1px solid #000000; /* Light grey border between rows */
+}
+
+#postgraduate-container table tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light grey color for odd rows */
+}
+
+#postgraduate-container table tr:nth-child(even) {
+    background-color: #ffffff; /* White color for even rows */
+}
+
+/* Style for category cell to span multiple rows */
+#postgraduate-container table td[rowspan] {
+    vertical-align: middle; /* Center-align the text vertically */
+    background-color: #e8e8e8; /* Light grey background for category cell */
+    font-weight: bold; /* Bold text for category */
+}
+
+footer {
+    background-color: #000000; /* Dark black background for the footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+

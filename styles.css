@@ -1,0 +1,261 @@
+/* Body styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0); 
+    color: #000000;
+}
+
+/* Logo styles */
+header .logo-container .logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+header .main-nav {
+    padding: 0;
+}
+
+header .main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin: 0 15px;
+    position: relative; /* Add relative positioning to create space for the line */
+    display: flex; /* Add flex display to center the text */
+    align-items: center; /* Align items vertically */
+}
+
+header .main-nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px; /* Adjust the position of the line */
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust line color and opacity */
+}
+
+header .main-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Allow the text to occupy full width */
+    padding-right: 8px; /* Adjust the padding to move the text slightly to the right */
+    margin-right: 8px; /* Add margin to create space between text and lines */
+    position: relative;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button i {
+    color: #ffffff;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%; /* Set width to fill the container */
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%; /* Set width to fill the slide */
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .contact-info {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin-top: 40px;
+}
+
+footer .footer-nav {
+    margin-bottom: 20px;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+/* Social Icons Section */
+.social-icons-section {
+    text-align: left;
+}
+
+.social-icons-section h3 {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.social-media-icons {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.social-media-icons .mb-5 {
+    margin-bottom: 30;
+}
+
+.social-media-icons a {
+    margin: 0 8px;
+}
+
+.social-icons-section img {
+    width: 32px; /* You can adjust this value to resize the icons */
+    height: 32px; /* You can adjust this value to resize the icons */
+    margin: 0px
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%; /* Adjust width of each box */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ffffff; /* Add border for each box */
+    border-radius: 0px; /* Add border radius */
+}
+
+.box img {
+    width:270px; /* Adjust image width */
+    height: 200px; /* Adjust image height */
+    margin-bottom: 0px; /* Adjust margin-bottom for image */
+}
+
+.header-description h2 {
+    text-align: left; /* Center the heading */
+    margin-bottom: 20px; /* Adjust margin-bottom as needed */
+    font-size: 25px; /* Adjust font size */
+    margin-top: 25px;
+    margin-left: 70px ;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.map-section h2 {
+    margin-left: 40px ;/* Adjust margin for spacing */
+    margin-top: 30px;
+}
+
+.map-container {
+    justify-content: center; /* Center the map */
+    margin-left: 80px;
+}
+
+footer .footer-nav {
+    margin-top: 20px; /* Add margin above the navigation links */
+}
+
+.footer-content{
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+    padding-bottom: 10px; /* Optional: Add some padding below the border */
+}
